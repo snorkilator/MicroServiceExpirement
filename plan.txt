@@ -1,0 +1,30 @@
+Purpose:
+    to expirment with multiple binaries running side by side
+    familiarize myself with IP/TCP/HTTP/CLI input/automatic 
+
+
+shared data:
+    port range or port array
+
+API
+    JSON
+        {
+            message string
+            jumps [nodePort1, nodePort2, ...]
+        }
+
+microservice module
+    packages fro each microservice (all have main package name)
+    1. input node
+        takes input from cli
+        send to specified node command: "messageString port #numberOfJumpsToMake"
+    2. transceiver node
+        chooses next available port in certain range
+        receives
+        checks number of jumps left, if 0 sends to output node
+        appends port number to message
+    3. output node
+        prints body of message to shell and port numbers
+
+Features to add:
+    timestamp from input node
