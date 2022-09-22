@@ -1,6 +1,7 @@
 Purpose:
     to expirment with multiple binaries running side by side
     familiarize myself with IP/TCP/HTTP/CLI input/automatic 
+    create simple api using open standards
 
 
 shared data:
@@ -28,3 +29,8 @@ microservice module
 
 Features to add:
     timestamp from input node
+    anaylytics
+    stack trace across systems
+    end to end testing
+    unit testing
+    intergation testing
